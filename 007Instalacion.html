@@ -1,0 +1,745 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Un repaso a todo lo necesario para iniciarse con Linux Mint.">
+      
+      
+        <link rel="canonical" href="https://cuadernosdenotas.github.io/linuxmint/007Instalacion.html">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Instalación - Introducción a Linux</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="css/estilos.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#instalar-mint" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://cuadernosdenotas.github.io/linuxmint/" title="Introducción a Linux" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Introducción a Linux
+              </span>
+              <span class="md-header-nav__topic">
+                Instalación
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/cuadernosdenotas/linuxmint" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      cuadernosdenotas/linuxmint
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://cuadernosdenotas.github.io/linuxmint/" title="Introducción a Linux" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Índice de capítulos:
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/cuadernosdenotas/linuxmint" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      cuadernosdenotas/linuxmint
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="001SistemasOperativos.html" title="Sistemas operativos" class="md-nav__link">
+      Sistemas operativos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="002Historia.html" title="Un poco de historia" class="md-nav__link">
+      Un poco de historia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="003Distribuciones.html" title="Distribuciones" class="md-nav__link">
+      Distribuciones
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="004Escritorios.html" title="Escritorios" class="md-nav__link">
+      Escritorios
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="005Mint.html" title="Linux Mint" class="md-nav__link">
+      Linux Mint
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="006Carpetas.html" title="Directorios" class="md-nav__link">
+      Directorios
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Instalación
+      </label>
+    
+    <a href="007Instalacion.html" title="Instalación" class="md-nav__link md-nav__link--active">
+      Instalación
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenido:</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descargar-linux-mint" title="Descargar Linux Mint" class="md-nav__link">
+    Descargar Linux Mint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciando-una-sesion-live" title="Iniciando una sesión Live" class="md-nav__link">
+    Iniciando una sesión Live
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparando-la-instalacion" title="Preparando la instalación" class="md-nav__link">
+    Preparando la instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-la-instalacion" title="Configurar la instalación" class="md-nav__link">
+    Configurar la instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-proceso-de-instalacion" title="El proceso de instalación" class="md-nav__link">
+    El proceso de instalación
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="008PrimerosPasos.html" title="Primeros pasos" class="md-nav__link">
+      Primeros pasos
+    </a>
+  </li>
+
+    
+    
+  </ul>
+
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+     <br>Índice de cuadernos:
+     <a href="https://cuadernosdenotas.github.io"> <img src="img/cuadernos.png"></a>
+  </label>
+
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenido:</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descargar-linux-mint" title="Descargar Linux Mint" class="md-nav__link">
+    Descargar Linux Mint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciando-una-sesion-live" title="Iniciando una sesión Live" class="md-nav__link">
+    Iniciando una sesión Live
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparando-la-instalacion" title="Preparando la instalación" class="md-nav__link">
+    Preparando la instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-la-instalacion" title="Configurar la instalación" class="md-nav__link">
+    Configurar la instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-proceso-de-instalacion" title="El proceso de instalación" class="md-nav__link">
+    El proceso de instalación
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="instalar-mint">Instalar Mint</h1>
+<p>Vamos a ver como instalar y configurar en nuestro equipo una de las distribuciones más pulares de Linux: Mint.</p>
+<h2 id="descargar-linux-mint">Descargar Linux Mint</h2>
+<p>El primer paso es hacernos con el dvd de instalación. Acudimos a la <a href="https://www.linuxmint.com/">página web</a> de Linux Mint:</p>
+<p><img alt="" src="img/descarga001.png" /></p>
+<p>En la barra superior pulsamos en el enlace <code class="codehilite">Download</code>. En la página que se muestra a continuación tenemos varios enlaces de descarga, dependiendo de la versión seleccionada:</p>
+<ul>
+<li>
+<p>nuestro escritorio preferido: <em>Cinnamon</em>, <em>MATE</em>, <em>Xfce</em> o <em>KDE</em>.</p>
+</li>
+<li>
+<p>la arquitectura de nuestro equipo: 32 o 64 bits.</p>
+</li>
+</ul>
+<p><img alt="" src="img/descarga002.png" /></p>
+<p>Al pulsar sobre la opción deseada, aparece una página de descargas donde debemos seleccionr un servidor &ldquo;mirror&rdquo; desde donde bajarnos el dvd de Mint. Previamente pulsaremos en el enlace <em>Announcement</em> para consultar los requisitos mínimos que debe tener nuestra máquina.</p>
+<p><img alt="" src="img/descarga003.png" /></p>
+<p>En el anuncio del lanzamiento de la versión buscamos el apartado <em>System requirements</em>:</p>
+<blockquote>
+<p>System requirements:</p>
+<p>1GB RAM (2GB recommended for a comfortable usage).
+  15GB of disk space (20GB recommended).
+  1024×768 resolution (on lower resolutions, press ALT to drag windows with the mouse if they don’t fit in the screen).</p>
+</blockquote>
+<p><img alt="" src="img/descarga004.png" /></p>
+<p>El resultado de la descarga es un archivo .iso que consiste es una imagen del DVD de instalación. Con ese archivo tenemos tres opciones:</p>
+<ul>
+<li>
+<p>según cual sea nuestro sistema operativo actual, utilizar alguna herramienta para grabar un disco DVD. ¡Atención! No se trata de que copiemos este fichero .iso al DVD, sino que hagamos una grabación pista a pista del disco tomando los bits de esta &ldquo;imagen&rdquo; descargada.</p>
+</li>
+<li>
+<p>en lugar de un DVD, crear una unidad USB de arranque.</p>
+</li>
+<li>
+<p>en mi caso utilizo una máquina virtual con la ayuda de un software llamado <a href="https://www.virtualbox.org/">VirtualBox</a> y uso el archivo descargado como DVD virtual, sin necesidad de grabarlo en ningún sitio.</p>
+</li>
+</ul>
+<h2 id="iniciando-una-sesion-live">Iniciando una sesión <em>Live</em></h2>
+<p>Una vez que contamos con un dvd de instalación (o unidad USB), lo insertaremos en la unidad lectora o, en el caso de máquinas virtuales, configuramos el archivo .iso como dvd virtual. Debemos asegurarnos de que nuestro ordenador se pone en marcha cargando el sistema operativo a partir del DVD (o el USB en su caso) con prioridad sobre el disco duro. Si no es así, el disco insertado no tendrá efecto.</p>
+<p>Podemos configurar el orden de los dispositivos en el arranque de la máquina. Dependiendo del fabricante, al encenderla suele aparecer el logotipo y un mensaje en una esquina de la pantalla indicando &ldquo;Pulsar tecla XX para configurar arranque&rdquo;. Nótese que si hacemos esto, generalmente iniciaremos  un programa de configuración en formato de texto, donde el ratón no tiene efecto y tendremos que navegar por las opciones con la ayuda de las teclas de flechas y la tecla <code class="codehilite">Intro</code>.</p>
+<p>Una vez comprobadas y ajustadass las prioridades de inicio, al encender el ordenador se detectará el DVD de instalación y se ejecutará el programa de arranque que hay en el mismo. El sistema operativo instalado en nuestro disco duro será ignorado, y se pondrá en marcha una sesión &ldquo;Live&rdquo; de Linux Mint.</p>
+<p><img alt="" src="img/live001.png" /></p>
+<p>Si no pulsamos ninguna tecla, automáticamente se cargará el sistema operativo que hay en el DVD. Si por el contrario pulsamos una tecla antes de finalizar la cuenta atrás, se nos ofrecerán otras opciones. Seleccionarlas pulsando <code class="codehilite">flecha arriba/abajo</code> e <code class="codehilite">Intro</code>. En este caso, ejecutaremos &ldquo;Start Linux Mint&rdquo;.</p>
+<p><img alt="" src="img/live002.png" /></p>
+<div class="nota">
+
+<strong>Nota</strong>: las capturas de pantalla mostradas a continuación se corresponden con una máquina virtual ejecutándose en una ventana del escritorio de mi ordenador. La barra superior pertenece a esa ventana y no tiene nada que ver con linux Mint.
+
+</div>
+
+<p>El mini sistema operativo que hay en el DVD tarda un poquito en cargarse:</p>
+<p><img alt="" src="img/live003.png" /></p>
+<p>Finalmente se visualiza el escritorio de la sesión &ldquo;Live&rdquo;. Podemos experimentar un poco con Linux. Por ahora tenemos el disco duro vacío.</p>
+<p><img alt="" src="img/live004.png" /></p>
+<p>En el escritorio hay tres iconos:</p>
+<ul>
+<li>
+<p><em>Computer</em>: da acceso al explorador de ficheros. Similar a lo que haríamos en windows cuando pulsamos en el icono &ldquo;Mi PC&rdquo;.</p>
+</li>
+<li>
+<p><em>Home</em>: abre el explorador en la carpeta de documentos del usuario</p>
+</li>
+<li>
+<p><em>Install Linux Mint</em>: pone en marcha el proceso de instalación en el disco duro</p>
+</li>
+</ul>
+<p>Quizás lo primero sea explorar un poco. Podríamos ver por ejemplo si funciona el navegador web y conseguimos acceder a Internet. Pulsamos en la esquina inferior izquierda, en el icono verde de <em>Mint</em> para mostrar el menú de aplicaciones. Buscamos la entrada de <em>Internet &gt; Firefox web browser</em></p>
+<p><img alt="" src="img/live005.png" /></p>
+<p>Podemos apagar la máquina sin llegar a instalar nada en nuestro equipo. Pulsamos en la barra inferior del escritorio. En los iconos de la derecha tenemos el de <em>Usuario</em>. En el menú desplegable seleccionamos la opción <em>Power Off&hellip;</em>.</p>
+<p><img alt="" src="img/live006.png" /></p>
+<p>También tenemos esa opción en el menú general de programas pulsando en el icono de <em>Mint</em> en la esquina inferior izquierda del escritorio.</p>
+<h2 id="preparando-la-instalacion">Preparando la instalación</h2>
+<p>Antes de comenzar el proceso tenemos que planificar lo que vamos a hacer con nuestro disco duro. Tenemos varias opciones:</p>
+<ol>
+<li>
+<p>¿descartar todo lo que hay allí, formatearlo e instalar el nuevo sistema operativo? En este caso no hay problema. Perderemos todos los contenidos, pero si esa es nuestra elección&hellip;</p>
+</li>
+<li>
+<p>¿sustituir nuestro viejo sistema operativo por el nuevo manteniendo los documentos? Tendremos que hacer una copia de seguridad de los mismos para recuperarlos posteriormente, porque al formatear el disco duro se van a perder.</p>
+</li>
+<li>
+<p>dividir el disco duro en dos particiones, una para el sistema operativo y otra para los documentos. Antes de mover nada, haremos una copia de seguridad de los mismos, por si acaso. Seguidamente, hacemos uso de las utilidades de administración de discos de nuestro viejo sistema operativo para partir el disco en dos y mover los documentos de una partición a la otra. Durante el proceso de instalación, borraremos la partición dedicada al sistema operativo e instalaremos allí el nuevo.</p>
+</li>
+<li>
+<p>también podemos hacer una copia de seguridad de los documentos, reformatear todo el disco duro durante el proceso de instalación, hacer dos particiones, dejar una de ellas ligada a la carpeta <code class="codehilite">/home</code> de usuario, y una vez instalado Linux, copiar de vuelta los documentos. Esto tiene una ventaja sobre la opción anterior: la partición dedicda a documentos se puede formatear con el formato de linux en lugar de usar el de windows, por ejemplo.</p>
+</li>
+<li>
+<p>podemos hacer algo similar a la anterior, descartando los documentos y comenzando desde cero, pero creando dos particiones, una para software y otra para documentos.</p>
+</li>
+<li>
+<p>otra opción es utilizar las utilidades de administración de discos del sistema operativo viejo para particionar el disco en dos, creando la nueva partición vacía. Mantendremos los dos sistemas operativos simultáneamente, uno en cada partición del disco duro, y cada uno con sus documentos. Habrá que configurar el programa de arranque de la máquina sustituyéndolo por uno que cada vez que encendamos el ordenador nos pregunte cual es el sistema que queremos poner en marcha. El proceso de instalación de Linux puede instalar ese nuevo programa de arranque.</p>
+</li>
+<li>
+<p>la opción anterior admite una variante: crear tres particiones, dejar el sistema operativo viejo en la primera, pasar los documentos a la segunda, e instalar Linux en la tercera. De esta forma, desde ambos sistemas operativos podremos acceder a los mismos documentos, aunque el formato de la partición de documentos ha de ser el de windows, que no es capaz de acceder a formatos linux (a la inversa si se puede).</p>
+</li>
+</ol>
+<p>Una vez planificada la configuración del disco duro, podemos iniciar el proceso de instalación. Vamos a hacer lo siguiente:</p>
+<ul>
+<li>
+<p>si tenemos un ordenador portátil, asegurarnos que está conectado a la red eléctrica.</p>
+</li>
+<li>
+<p>introducimos el DVD (o USB) de instalación y arrancamos la máquina. Se inicia una sesión &ldquo;Live&rdquo;.</p>
+</li>
+<li>
+<p>comprobar que tenemos conexión a Internet.</p>
+</li>
+<li>
+<p>pulsamos sobre el icono <em>Install Linux Mint</em></p>
+</li>
+</ul>
+<p><img alt="" src="img/live004.png" /></p>
+<h2 id="configurar-la-instalacion">Configurar la instalación</h2>
+<p>Al pulsar en el icono mencionado, se inicia un asistente para configurar el proceso. El primer paso es seleccionar el idioma. Seguidamente pulsamos en el botón <code class="codehilite">continuar</code>.</p>
+<p><img alt="" src="img/instalar001.png" /></p>
+<p>El uso de cierto software está limitado a licencias de uso, y no se incluye en algunas distribuciones Linux. Mint pregunta si queremos instalar esos programas. Marcamos la casilla y pulsamos en <code class="codehilite">continuar</code>.</p>
+<p><img alt="" src="img/instalar002.png" /></p>
+<p>A continuación decidimos si:</p>
+<ul>
+<li>vamos a hacer dos particiones en el disco duro y mantener el sistema operativo anterior</li>
+<li>vamos a utilizar todo el disco duro. En mi caso, como estoy utilizando una máquina virtual, selecciono esta opción de borrar todo el disco duro y utilizar el ordenador solo con el nuevo sistema operativo.</li>
+<li>también podemos pulsar en el botón <code class="codehilite">mas opciones</code> para configurar las particiones a nuestro gusto.</li>
+</ul>
+<p><img alt="" src="img/instalar003.png" /></p>
+<p>Si hemos optado por mantener los dos sistemas operativos, se mostrará una ventana para que ajustemos el tamaño asignado a ambas particiones en disco, arrastrando la barra separadora con el ratón:</p>
+<p><img alt="" src="img/instalar009.png" /></p>
+<p>Si hemos optado por pulsar en el botón <code class="codehilite">más opciones</code>, entramos en una ventana de configuración de particiones que muestra una lista de las mismas. La primera columna es el nombre del dispositivo (el driver). La segunda indica el tipo de partición, que será <em>swap</em> si la usamos para ese propósito, o el formato utilizado al formatear el disco. Mint suele usar <em>ext4</em>, pero también es capaz de acceder a los formatos utilizados por windows.</p>
+<p><img alt="" src="img/instalar004.png" /></p>
+<p>Aquí hemos pulsado en el botón <code class="codehilite">[-]</code> para eliminar la partición seleccionada, con lo cual queda marcado como espacio libre y pulsando el botón <code class="codehilite">[+]</code> podemos crear nuevas particiones en ese espacio. No debemos preocuparnos por el borrado de particiones por ahora. Los cambios solo se materializarán cuando se inicie el proceso de instalación. Por ahora solo estamos configurando dicho proceso.</p>
+<p><img alt="" src="img/instalar005.png" /></p>
+<p>Esto es lo que se pregunta al intentar crear una nueva partición de disco: tamaño a ocupar (en megas) o si se trata de una partición primaria o extendida.</p>
+<p><img alt="" src="img/instalar006.png" /></p>
+<p>El desplegable &ldquo;<em>utilizar como</em>&rdquo; permite indicar el tipo de formateo de la partición. Los formatos ext2, ext3 y ext4 son típicos de linux, mientras que FAT16 y FAT32 son los de windows.</p>
+<p><img alt="" src="img/instalar007.png" /></p>
+<p>Para acceder a los contenidos de la nueva partición tenemos que asignarle un punto de montaje en la estructura de directorios. Típicamente crearemos una partición ligada al directorio raiz, y otra para archivos de usuario montada en <code class="codehilite">/home</code>.</p>
+<p><img alt="" src="img/instalar008.png" /></p>
+<p>Una vez configurados los cambios en el disco duro, hay que confirmarlos para que se lleven a cabo. Se perderán los archivos de aquellas particiones que hayamos decidido eliminar o reformatear.</p>
+<p><img alt="" src="img/instalar010.png" /></p>
+<h2 id="el-proceso-de-instalacion">El proceso de instalación</h2>
+<p>Comienza el proceso. Lo primero es establecer nuestro huso horario:</p>
+<p><img alt="" src="img/instalar011.png" /></p>
+<p>Seleccionar la disposición del teclado. Podemos comprobar que nuestra elección es la adecuada tecleando algo en el apartado habilitado para hacer pruebas. Intentar introducir caracteres raros: ñ, ç, }, @ &hellip;</p>
+<p><img alt="" src="img/instalar012.png" /></p>
+<p>Introducimos un nombre de usuario, equipo y password. La opción <code class="codehilite">Iniciar sesión automáticamente</code> hace que no se nos pida la contraseña cada vez que encendemos el ordenador. Muchos usuarios prefieren desactivar esta opción por precaución.</p>
+<p><img alt="" src="img/instalar013.png" /></p>
+<p>Comienza el proceso de copiado de contenidos del DVD al disco duro, instalación y configuración. Es un proceso totalmente automático que puede llevar bastante tiempo. Mientras dura, se muestra información sobre Mint.</p>
+<p><img alt="" src="img/instalar014.png" /></p>
+<p>Fin de la instalación. Extraemos el DVD y pulsamos sobre el botón <code class="codehilite">reiniciar</code>.</p>
+<p><img alt="" src="img/instalar015.png" /></p>
+<p>Apagando la máquina&hellip;</p>
+<p><img alt="" src="img/instalar016.png" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="006Carpetas.html" title="Directorios" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Directorios
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="008PrimerosPasos.html" title="Primeros pasos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Primeros pasos
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; El taller de jf. Creado con
+            <a href="https://www.mkdocs.org">MkDocs</a>
+            y <a href="https://squidfunk.github.io/mkdocs-material/">
+            Material for MkDocs</a>. Última actualización: 18-11-2018
+        </div>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

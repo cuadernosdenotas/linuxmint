@@ -1,0 +1,703 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Un repaso a todo lo necesario para iniciarse con Linux Mint.">
+      
+      
+        <link rel="canonical" href="https://cuadernosdenotas.github.io/linuxmint/008PrimerosPasos.html">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Primeros pasos - Introducción a Linux</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="css/estilos.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#primeros-pasos" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://cuadernosdenotas.github.io/linuxmint/" title="Introducción a Linux" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Introducción a Linux
+              </span>
+              <span class="md-header-nav__topic">
+                Primeros pasos
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/cuadernosdenotas/linuxmint" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      cuadernosdenotas/linuxmint
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://cuadernosdenotas.github.io/linuxmint/" title="Introducción a Linux" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Índice de capítulos:
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/cuadernosdenotas/linuxmint" title="Repositorio en GitHub" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      cuadernosdenotas/linuxmint
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="001SistemasOperativos.html" title="Sistemas operativos" class="md-nav__link">
+      Sistemas operativos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="002Historia.html" title="Un poco de historia" class="md-nav__link">
+      Un poco de historia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="003Distribuciones.html" title="Distribuciones" class="md-nav__link">
+      Distribuciones
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="004Escritorios.html" title="Escritorios" class="md-nav__link">
+      Escritorios
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="005Mint.html" title="Linux Mint" class="md-nav__link">
+      Linux Mint
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="006Carpetas.html" title="Directorios" class="md-nav__link">
+      Directorios
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="007Instalacion.html" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Primeros pasos
+      </label>
+    
+    <a href="008PrimerosPasos.html" title="Primeros pasos" class="md-nav__link md-nav__link--active">
+      Primeros pasos
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenido:</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#actualizaciones" title="Actualizaciones" class="md-nav__link">
+    Actualizaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explorando-mint" title="Explorando Mint" class="md-nav__link">
+    Explorando Mint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-la-barra-inferior-del-escritorio" title="Configurando la barra inferior del escritorio" class="md-nav__link">
+    Configurando la barra inferior del escritorio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#centro-de-control" title="Centro de control" class="md-nav__link">
+    Centro de control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iconos-de-aplicaciones-en-el-escritorio" title="Iconos de aplicaciones en el escritorio" class="md-nav__link">
+    Iconos de aplicaciones en el escritorio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-aplicaciones" title="Eliminar aplicaciones" class="md-nav__link">
+    Eliminar aplicaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadiendo-nuevas-aplicaciones" title="Añadiendo nuevas aplicaciones" class="md-nav__link">
+    Añadiendo nuevas aplicaciones
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+    
+  </ul>
+
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+     <br>Índice de cuadernos:
+     <a href="https://cuadernosdenotas.github.io"> <img src="img/cuadernos.png"></a>
+  </label>
+
+
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Contenido:</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#actualizaciones" title="Actualizaciones" class="md-nav__link">
+    Actualizaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explorando-mint" title="Explorando Mint" class="md-nav__link">
+    Explorando Mint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando-la-barra-inferior-del-escritorio" title="Configurando la barra inferior del escritorio" class="md-nav__link">
+    Configurando la barra inferior del escritorio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#centro-de-control" title="Centro de control" class="md-nav__link">
+    Centro de control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iconos-de-aplicaciones-en-el-escritorio" title="Iconos de aplicaciones en el escritorio" class="md-nav__link">
+    Iconos de aplicaciones en el escritorio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-aplicaciones" title="Eliminar aplicaciones" class="md-nav__link">
+    Eliminar aplicaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadiendo-nuevas-aplicaciones" title="Añadiendo nuevas aplicaciones" class="md-nav__link">
+    Añadiendo nuevas aplicaciones
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="primeros-pasos">Primeros pasos</h1>
+<p>Una vez que hemos instalado Linux Mint, vamos a hacer una primera exploraración de lo que tenemos en nuestro ordenador.</p>
+<p>Mint proporciona un sistema automático de actualizaciones. Lo primero será comprobar que nuestro software está al día, y descargar los últimos cambios.</p>
+<p _="%" include="include" toc.html="toc.html">Tabla de contenido:</p>
+<h2 id="actualizaciones">Actualizaciones</h2>
+<p>Tras reiniciar el ordenador, se carga el sistema operativo recién instalado y se muestra la ventana de bienvenida sobre el escritorio. La cerramos.</p>
+<p>Opcionalmente podemos desmarcar la casilla <em>Mostrar esta ventana al inicio</em>.</p>
+<p><img alt="" src="img/actualizar001.png" /></p>
+<p>La barra inferior del escritorio es configurable y puede cambiar de aspecto. En principio vemos:</p>
+<ul>
+<li>a la izquierda, el icono de Mint. Pulsando sobre el mismo, se despliega el menú de aplicaciones</li>
+<li>seguidamente, varios iconos para diferentes programas</li>
+<li>las aplicaciones en ejecución</li>
+<li>a la derecha tenemos unos iconos con el estado de la conexión a Internet, volumen de sonido, batería y reloj. Pulsamos sobre el icono en forma de escudo, que sirve para controlar las actualizaciones:</li>
+</ul>
+<p><img alt="" src="img/actualizar002.png" /></p>
+<p>Mint mantiene un sistema automático de actualización del software instalado. Como es la primera vez que entramos aquí, comenzamos por seleccionar nuestra política de actualizaciones:</p>
+<p><img alt="" src="img/actualizar003.png" /></p>
+<p>Al pulsar sobre el botón <code class="codehilite">ok</code> se muestran las actualizaciones pendientes que tienen más prioridad. Pulsamos en el botón <code class="codehilite">Instalar actualizaciones</code>:</p>
+<p><img alt="" src="img/actualizar004.png" /></p>
+<p>Cualquier instalación requiere nuestra password:</p>
+<p><img alt="" src="img/actualizar005.png" /></p>
+<p>Es posible que algunas actualizaciones requieran hacer cambios adicionales. Se nos pregunta:</p>
+<p><img alt="" src="img/actualizar006.png" /></p>
+<p>Instalando. Esto lleva tiempo:</p>
+<p><img alt="" src="img/actualizar007.png" /></p>
+<p>Tras finalizar, se comprueba la existencia de más actualizaciones. La primera vez, el proceso se repetirá varias veces. Podemos marcar/desmarcar los paquetes a actualizar. En principio seleccionamos todo.</p>
+<p>Cuando no quedan más actualizaciones pendientes, se muestra:</p>
+<p><img alt="" src="img/actualizar008.png" /></p>
+<p>Tras cerrar el <em>Administrador de Actualizaciones</em>, el icono de actualizaciones en la parte inferior del escritorio ha cambiado. Ahora el escudo aparece con un carácter &ldquo;√&rdquo;</p>
+<p><img alt="" src="img/actualizar009.png" /></p>
+<h2 id="explorando-mint">Explorando Mint</h2>
+<p>Comencemos por ver los iconos disponibles en la barra inferior del escritorio:</p>
+<p><img alt="" src="img/explorar001.png" /></p>
+<p>Son los siguientes:</p>
+<ul>
+<li>El menú de aplicaciones</li>
+<li>Minimizar todas las ventanas y mostrar el escritorio</li>
+<li>Navegador web *Firefox&rdquo;</li>
+<li>Terminal de comandos del sistema operativo</li>
+<li>Explorador de archivos. Se mostrará nuestra carpeta de documentos en el directorio <code class="codehilite">/home</code>.</li>
+</ul>
+<p>Pulsando en la esquina izquierda, se muestra el menú de aplicaciones:</p>
+<p><img alt="" src="img/live005.png" /></p>
+<p>En la barra lateral izquierda tenemos las aplicaciones e iconos que forman parte del grupo &ldquo;favoritos&rdquo;. Pasando el ratón por cualquier icono del menú, se muestra una pequeña descripción en la esquina inferior derecha.</p>
+<p>Veamos ahora algunas de las aplicaciones más interesantes:</p>
+<ul>
+<li>Navegador de Internet: pulsar en el menú &gt; Internet &gt; Firefox</li>
+<li>Para gestionar nuestro correo: pulsar en el menú &gt; Internet &gt; Thunderbird</li>
+<li>Para crear documentos de texto, hojas de cálculo, presentaciones, etc&hellip; pulsar en el menú &gt; Oficina. Se mostrará toda la colección de programas <em>LibreOffice</em>.</li>
+<li>Para ver vídeos: menú &gt; Sonido y Vídeo &gt; Reproductor multimedia VLC</li>
+<li>Para organizar nuestra música: menú  &gt; Sonido y Vídeo &gt; Rhythmbox</li>
+<li>Para organizar nuestras fotografías: menú &gt; Gráficos &gt; Pix</li>
+<li>Para escanear documentos: menú &gt; Gráficos &gt; Scan</li>
+<li>Para editar imágenes: menú &gt; Gráficos &gt; Gimp</li>
+<li>Calculadora:  menú &gt; accesorios &gt; calculadora</li>
+<li>Editor tipo <em>bloc de notas</em>: menú &gt; accesorios &gt; editor de textos</li>
+</ul>
+<p>Utilidades de administración y configuración:</p>
+<ul>
+<li>Instalar nuevos programas: menú &gt; administración &gt; gestor de software</li>
+<li>Hacer copias de seguridad: menú &gt; administración &gt; copia de seguridad</li>
+<li>Comprobar actualizaciones: menú &gt; administración &gt; actualizaciones</li>
+<li>Cambiar contraseña: menú &gt; administración &gt; usuarios</li>
+<li>Monitorizar los programas en ejecución: menú &gt; administración &gt; monitor del sistema</li>
+<li>Formateo de disco, grabar cd´s, gestionar particiones, etc: menú &gt; accesorios &gt; discos</li>
+<li>Cambio de contraseñas: menú &gt; accesorios &gt; contraseñas</li>
+</ul>
+<h2 id="configurando-la-barra-inferior-del-escritorio">Configurando la barra inferior del escritorio</h2>
+<p>Para eliminar alguno de los iconos: pulsar sobre el mismo con el botón secundario del ratón, y en el menú desplegable seleccionar la opción &ldquo;eliminar&rdquo;.</p>
+<p>Para añadir una aplicación a la barra inferior, al grupo de favoritos o al escritorio: en el menú de aplicaciones, pulsar sobre la misma con el botón secundario del ratón, y seleccionar la opción deseada.</p>
+<p>Para añadir utilidades (applets) pulsar sobre la barra con el botón secundario del ratón y seleccionar la opción <em>añadir applets al panel</em>. Se mostrará una selección de utilidades.</p>
+<p><img alt="" src="img/explorar002.png" /></p>
+<h2 id="centro-de-control">Centro de control</h2>
+<p>El equivalente al <em>Panel de control</em> de windows se encuentra en el menú &gt; Preferencias &gt; Configuración del sistema:</p>
+<p><img alt="" src="img/explorar003.png" /></p>
+<h2 id="iconos-de-aplicaciones-en-el-escritorio">Iconos de aplicaciones en el escritorio</h2>
+<p>Para añadir iconos al escritorio, pulsar en el menú de aplicaciones con el botón secundario del ratón y seleccionar <em>añadir al escritorio</em>.</p>
+<p><img alt="" src="img/explorar004.png" /></p>
+<h2 id="eliminar-aplicaciones">Eliminar aplicaciones</h2>
+<p>Pulsar en el menú de aplicaciones con el botón secundario del ratón y seleccionar <em>desinstalar</em>.</p>
+<h2 id="anadiendo-nuevas-aplicaciones">Añadiendo nuevas aplicaciones</h2>
+<p>Pulsar en el menú <em>Administración &gt; Gestor de software</em>. Se nos pedirá nuestra contraseña. Debemos asegurarnos de estar conectados a Internet.</p>
+<p>Mint cuenta con acceso a un enorme repositorio de programas, en buena parte heredado de <em>Ubuntu</em> y <em>Debian</em>. Se nos muestran los programas disponibles clasificados por categorías. En la esquina superior derecha tenemos una casilla para introducir búsquedas:</p>
+<p><img alt="" src="img/explorar005.png" /></p>
+<p>Hemos encontrado el programa que nos interesa: <em>Spotify</em>. Para instalarlo, basta con pulsar en el botón <code class="codehilite">Instalar</code>:</p>
+<p><img alt="" src="img/explorar006.png" /></p>
+<p>Toda la descarga e instalación es un proceso totalmente automático.</p>
+<p>Las aplicaciones ya instaladas muestran el mensaje &ldquo;Ya instalado&rdquo;, y el botón <code class="codehilite">eliminar</code> en lugar de <code class="codehilite">instalar</code>. Por ejemplo, en el caso del reproductor de vídeo:</p>
+<p><img alt="" src="img/explorar007.png" /></p>
+<p>Una alternativa a este programa proporcionado por <em>Mint</em> para gestionar software es <em>Synaptic</em>, heredado de <em>Ubuntu</em> y <em>Debian</em>. No es tan vistoso visualmente hablando, pero es una opción potente y muy utilizada por los usuarios que prefieren un mayor nivel técnico:</p>
+<p><img alt="" src="img/explorar008.png" /></p>
+<p>Aunque muchos de estos usuarios prefieren utilizar el terminal para instalar nuevo software con comandos tales como:</p>
+<div class="codehilite"><pre><span></span>sudo apt-get install spotify-client
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="007Instalacion.html" title="Instalación" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Instalación
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; El taller de jf. Creado con
+            <a href="https://www.mkdocs.org">MkDocs</a>
+            y <a href="https://squidfunk.github.io/mkdocs-material/">
+            Material for MkDocs</a>. Última actualización: 18-11-2018
+        </div>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
