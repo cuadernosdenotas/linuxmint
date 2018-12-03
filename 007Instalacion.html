@@ -503,7 +503,7 @@
 <p>En la barra superior pulsamos en el enlace <code class="codehilite">Download</code>. En la página que se muestra a continuación tenemos varios enlaces de descarga, dependiendo de la versión seleccionada:</p>
 <ul>
 <li>
-<p>nuestro escritorio preferido: <em>Cinnamon</em>, <em>MATE</em>, <em>Xfce</em> o <em>KDE</em>.</p>
+<p>nuestro escritorio preferido: <em>Cinnamon</em>, <em>MATE</em> o <em>Xfce</em>.</p>
 </li>
 <li>
 <p>la arquitectura de nuestro equipo: 32 o 64 bits.</p>
@@ -514,16 +514,16 @@
 <p><img alt="" src="img/descarga003.png" /></p>
 <p>En el anuncio del lanzamiento de la versión buscamos el apartado <em>System requirements</em>:</p>
 <blockquote>
-<p>System requirements:</p>
+<p><strong>System requirements:</strong></p>
 <p>1GB RAM (2GB recommended for a comfortable usage).
-  15GB of disk space (20GB recommended).
-  1024×768 resolution (on lower resolutions, press ALT to drag windows with the mouse if they don’t fit in the screen).</p>
+ 15GB of disk space (20GB recommended).
+ 1024×768 resolution (on lower resolutions, press ALT to drag windows with the mouse if they don’t fit in the screen).</p>
 </blockquote>
 <p><img alt="" src="img/descarga004.png" /></p>
-<p>El resultado de la descarga es un archivo .iso que consiste es una imagen del DVD de instalación. Con ese archivo tenemos tres opciones:</p>
+<p>El resultado de la descarga es un archivo <code class="codehilite"><span class="na">.iso</span></code> que consiste es una imagen del DVD de instalación. Con ese archivo tenemos tres opciones:</p>
 <ul>
 <li>
-<p>según cual sea nuestro sistema operativo actual, utilizar alguna herramienta para grabar un disco DVD. ¡Atención! No se trata de que copiemos este fichero .iso al DVD, sino que hagamos una grabación pista a pista del disco tomando los bits de esta &ldquo;imagen&rdquo; descargada.</p>
+<p>según cual sea nuestro sistema operativo actual, utilizar alguna herramienta para grabar un disco DVD. ¡Atención! No se trata de que copiemos este fichero <code class="codehilite"><span class="na">.iso</span></code> al DVD, sino que hagamos una grabación pista a pista del disco tomando como imagen el contenido del archivo.</p>
 </li>
 <li>
 <p>en lugar de un DVD, crear una unidad USB de arranque.</p>
@@ -533,21 +533,19 @@
 </li>
 </ul>
 <h2 id="iniciando-una-sesion-live">Iniciando una sesión <em>Live</em></h2>
-<p>Una vez que contamos con un dvd de instalación (o unidad USB), lo insertaremos en la unidad lectora o, en el caso de máquinas virtuales, configuramos el archivo .iso como dvd virtual. Debemos asegurarnos de que nuestro ordenador se pone en marcha cargando el sistema operativo a partir del DVD (o el USB en su caso) con prioridad sobre el disco duro. Si no es así, el disco insertado no tendrá efecto.</p>
+<p>Una vez que contamos con un dvd de instalación (o unidad USB), lo insertaremos en la unidad lectora. Si se trata de una máquina virtual, configuramos el archivo <code class="codehilite"><span class="na">.iso</span></code> como dvd virtual. Debemos asegurarnos de que nuestro ordenador se pone en marcha cargando el sistema operativo a partir del DVD (o el USB en su caso) con prioridad sobre el disco duro. Si no es así, el disco insertado no tendrá efecto.</p>
 <p>Podemos configurar el orden de los dispositivos en el arranque de la máquina. Dependiendo del fabricante, al encenderla suele aparecer el logotipo y un mensaje en una esquina de la pantalla indicando &ldquo;Pulsar tecla XX para configurar arranque&rdquo;. Nótese que si hacemos esto, generalmente iniciaremos  un programa de configuración en formato de texto, donde el ratón no tiene efecto y tendremos que navegar por las opciones con la ayuda de las teclas de flechas y la tecla <code class="codehilite">Intro</code>.</p>
 <p>Una vez comprobadas y ajustadass las prioridades de inicio, al encender el ordenador se detectará el DVD de instalación y se ejecutará el programa de arranque que hay en el mismo. El sistema operativo instalado en nuestro disco duro será ignorado, y se pondrá en marcha una sesión &ldquo;Live&rdquo; de Linux Mint.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>Las imágenes que se muestran a continuación corresponden a una sesión de Linux en máquina virtual. La barra superior de título es la correspondiente a la ventana que contiene la sesión virtual, y no pertenece al escritorio de linux.</p>
+</div>
 <p><img alt="" src="img/live001.png" /></p>
 <p>Si no pulsamos ninguna tecla, automáticamente se cargará el sistema operativo que hay en el DVD. Si por el contrario pulsamos una tecla antes de finalizar la cuenta atrás, se nos ofrecerán otras opciones. Seleccionarlas pulsando <code class="codehilite">flecha arriba/abajo</code> e <code class="codehilite">Intro</code>. En este caso, ejecutaremos &ldquo;Start Linux Mint&rdquo;.</p>
 <p><img alt="" src="img/live002.png" /></p>
-<div class="nota">
-
-<strong>Nota</strong>: las capturas de pantalla mostradas a continuación se corresponden con una máquina virtual ejecutándose en una ventana del escritorio de mi ordenador. La barra superior pertenece a esa ventana y no tiene nada que ver con linux Mint.
-
-</div>
-
 <p>El mini sistema operativo que hay en el DVD tarda un poquito en cargarse:</p>
 <p><img alt="" src="img/live003.png" /></p>
-<p>Finalmente se visualiza el escritorio de la sesión &ldquo;Live&rdquo;. Podemos experimentar un poco con Linux. Por ahora tenemos el disco duro vacío.</p>
+<p>Finalmente se visualiza el escritorio de la sesión &ldquo;Live&rdquo;:</p>
 <p><img alt="" src="img/live004.png" /></p>
 <p>En el escritorio hay tres iconos:</p>
 <ul>
@@ -555,40 +553,47 @@
 <p><em>Computer</em>: da acceso al explorador de ficheros. Similar a lo que haríamos en windows cuando pulsamos en el icono &ldquo;Mi PC&rdquo;.</p>
 </li>
 <li>
-<p><em>Home</em>: abre el explorador en la carpeta de documentos del usuario</p>
+<p><em>Home</em>: abre el explorador de archivos en la carpeta de documentos del usuario</p>
 </li>
 <li>
 <p><em>Install Linux Mint</em>: pone en marcha el proceso de instalación en el disco duro</p>
 </li>
 </ul>
-<p>Quizás lo primero sea explorar un poco. Podríamos ver por ejemplo si funciona el navegador web y conseguimos acceder a Internet. Pulsamos en la esquina inferior izquierda, en el icono verde de <em>Mint</em> para mostrar el menú de aplicaciones. Buscamos la entrada de <em>Internet &gt; Firefox web browser</em></p>
+<p>Quizás lo primero sea explorar un poco. Podríamos ver, por ejemplo, si funciona el navegador web y conseguimos acceder a Internet. Pulsamos en la esquina inferior izquierda, en el icono verde de <em>Mint</em> para mostrar el menú de aplicaciones. Buscamos la entrada de <em>Internet &gt; Firefox web browser</em></p>
 <p><img alt="" src="img/live005.png" /></p>
-<p>Podemos apagar la máquina sin llegar a instalar nada en nuestro equipo. Pulsamos en la barra inferior del escritorio. En los iconos de la derecha tenemos el de <em>Usuario</em>. En el menú desplegable seleccionamos la opción <em>Power Off&hellip;</em>.</p>
+<p>Podemos apagar la máquina sin llegar a instalar nada en nuestro equipo. Para ello pulsamos en la barra inferior del escritorio. En los iconos de la derecha tenemos el de <em>Usuario</em>. En el menú desplegable seleccionamos la opción <em>Power Off&hellip;</em>.</p>
 <p><img alt="" src="img/live006.png" /></p>
-<p>También tenemos esa opción en el menú general de programas pulsando en el icono de <em>Mint</em> en la esquina inferior izquierda del escritorio.</p>
+<p>También tenemos esa opción en el menú general de programas pulsando en el icono de apagado en la esquina inferior izquierda:</p>
+<p><img alt="" src="img/live005.png" /></p>
 <h2 id="preparando-la-instalacion">Preparando la instalación</h2>
 <p>Antes de comenzar el proceso tenemos que planificar lo que vamos a hacer con nuestro disco duro. Tenemos varias opciones:</p>
 <ol>
 <li>
-<p>¿descartar todo lo que hay allí, formatearlo e instalar el nuevo sistema operativo? En este caso no hay problema. Perderemos todos los contenidos, pero si esa es nuestra elección&hellip;</p>
+<p>Descartar todo lo que hay allí, formatearlo e instalar el nuevo sistema operativo. Esta es la opción más simple. Perderemos todos los contenidos, pero si esa es nuestra elección&hellip; También podríamos respaldar nuestros documentos en alguna unidad externa para recuperarlos más adelante.</p>
 </li>
 <li>
-<p>¿sustituir nuestro viejo sistema operativo por el nuevo manteniendo los documentos? Tendremos que hacer una copia de seguridad de los mismos para recuperarlos posteriormente, porque al formatear el disco duro se van a perder.</p>
+<p>Dividir el disco duro en dos particiones, una para el sistema operativo y otra para los documentos, sin perder estos. </p>
+<p>El primer paso es hacer una copia de seguridad, por si acaso. Seguidamente, hacemos uso de las utilidades de administración de discos de nuestro viejo sistema operativo para partir el disco en dos y mover los documentos de una partición a la otra.</p>
+<p>Durante el proceso de instalación, borraremos la partición dedicada al sistema operativo e instalaremos allí el nuevo.</p>
 </li>
 <li>
-<p>dividir el disco duro en dos particiones, una para el sistema operativo y otra para los documentos. Antes de mover nada, haremos una copia de seguridad de los mismos, por si acaso. Seguidamente, hacemos uso de las utilidades de administración de discos de nuestro viejo sistema operativo para partir el disco en dos y mover los documentos de una partición a la otra. Durante el proceso de instalación, borraremos la partición dedicada al sistema operativo e instalaremos allí el nuevo.</p>
+<p>Como alternativa a lo anterior, podemos:</p>
+<ul>
+<li>hacer una copia de seguridad de los documentos</li>
+<li>reformatear todo el disco duro durante el proceso de instalación, haciendo dos particiones</li>
+<li>dejar una de las particiones ligada a la carpeta <code class="codehilite">/home</code> de usuario</li>
+<li>una vez instalado Linux, copiar de vuelta los documentos.</li>
+</ul>
+<p>Esto tiene una ventaja sobre la opción anterior: la partición dedicada a documentos se puede formatear con el formato de linux en lugar de usar el de windows, por ejemplo.</p>
 </li>
 <li>
-<p>también podemos hacer una copia de seguridad de los documentos, reformatear todo el disco duro durante el proceso de instalación, hacer dos particiones, dejar una de ellas ligada a la carpeta <code class="codehilite">/home</code> de usuario, y una vez instalado Linux, copiar de vuelta los documentos. Esto tiene una ventaja sobre la opción anterior: la partición dedicda a documentos se puede formatear con el formato de linux en lugar de usar el de windows, por ejemplo.</p>
+<p>Otra opción es utilizar las utilidades de administración de discos del sistema operativo viejo para particionar el disco en dos, creando la nueva partición vacía. </p>
+<p>En esa partición vacía instalaremos Linux. De esta forma, mantendremos los dos sistemas operativos simultáneamente, uno en cada partición del disco duro, y cada uno con sus documentos. </p>
+<p>Habrá que configurar el programa de arranque de la máquina sustituyéndolo por uno que, cada vez que encendamos el ordenador, nos pregunte cual es el sistema que queremos poner en marcha. El proceso de instalación de Linux puede instalar ese nuevo programa de arranque.</p>
 </li>
 <li>
-<p>podemos hacer algo similar a la anterior, descartando los documentos y comenzando desde cero, pero creando dos particiones, una para software y otra para documentos.</p>
-</li>
-<li>
-<p>otra opción es utilizar las utilidades de administración de discos del sistema operativo viejo para particionar el disco en dos, creando la nueva partición vacía. Mantendremos los dos sistemas operativos simultáneamente, uno en cada partición del disco duro, y cada uno con sus documentos. Habrá que configurar el programa de arranque de la máquina sustituyéndolo por uno que cada vez que encendamos el ordenador nos pregunte cual es el sistema que queremos poner en marcha. El proceso de instalación de Linux puede instalar ese nuevo programa de arranque.</p>
-</li>
-<li>
-<p>la opción anterior admite una variante: crear tres particiones, dejar el sistema operativo viejo en la primera, pasar los documentos a la segunda, e instalar Linux en la tercera. De esta forma, desde ambos sistemas operativos podremos acceder a los mismos documentos, aunque el formato de la partición de documentos ha de ser el de windows, que no es capaz de acceder a formatos linux (a la inversa si se puede).</p>
+<p>La opción anterior admite una variante: crear tres particiones, dejar el sistema operativo viejo en la primera, pasar los documentos a la segunda, e instalar Linux en la tercera. </p>
+<p>De esta forma, desde ambos sistemas operativos podremos acceder a los mismos documentos, aunque el formato de la partición de documentos ha de ser el de windows, que no es capaz de acceder a formatos linux (a la inversa si se puede).</p>
 </li>
 </ol>
 <p>Una vez planificada la configuración del disco duro, podemos iniciar el proceso de instalación. Vamos a hacer lo siguiente:</p>
@@ -610,37 +615,57 @@
 <h2 id="configurar-la-instalacion">Configurar la instalación</h2>
 <p>Al pulsar en el icono mencionado, se inicia un asistente para configurar el proceso. El primer paso es seleccionar el idioma. Seguidamente pulsamos en el botón <code class="codehilite">continuar</code>.</p>
 <p><img alt="" src="img/instalar001.png" /></p>
-<p>El uso de cierto software está limitado a licencias de uso, y no se incluye en algunas distribuciones Linux. Mint pregunta si queremos instalar esos programas. Marcamos la casilla y pulsamos en <code class="codehilite">continuar</code>.</p>
+<p>Seleccionar la disposición del teclado. Podemos comprobar que nuestra elección es la adecuada tecleando algo en el apartado habilitado para hacer pruebas. Intentar introducir caracteres raros: ñ, ç, }, @ &hellip;</p>
 <p><img alt="" src="img/instalar002.png" /></p>
-<p>A continuación decidimos si:</p>
-<ul>
-<li>vamos a hacer dos particiones en el disco duro y mantener el sistema operativo anterior</li>
-<li>vamos a utilizar todo el disco duro. En mi caso, como estoy utilizando una máquina virtual, selecciono esta opción de borrar todo el disco duro y utilizar el ordenador solo con el nuevo sistema operativo.</li>
-<li>también podemos pulsar en el botón <code class="codehilite">mas opciones</code> para configurar las particiones a nuestro gusto.</li>
-</ul>
+<p>El uso de cierto software está limitado a licencias de uso, y no se incluye en algunas distribuciones Linux. Mint pregunta si queremos instalar esos programas. Marcamos la casilla y pulsamos en <code class="codehilite">continuar</code>.</p>
 <p><img alt="" src="img/instalar003.png" /></p>
-<p>Si hemos optado por mantener los dos sistemas operativos, se mostrará una ventana para que ajustemos el tamaño asignado a ambas particiones en disco, arrastrando la barra separadora con el ratón:</p>
-<p><img alt="" src="img/instalar009.png" /></p>
-<p>Si hemos optado por pulsar en el botón <code class="codehilite">más opciones</code>, entramos en una ventana de configuración de particiones que muestra una lista de las mismas. La primera columna es el nombre del dispositivo (el driver). La segunda indica el tipo de partición, que será <em>swap</em> si la usamos para ese propósito, o el formato utilizado al formatear el disco. Mint suele usar <em>ext4</em>, pero también es capaz de acceder a los formatos utilizados por windows.</p>
+<p>A continuación decidimos que vamos a hacer con el disco duro. Podemos utilizar todo el disco duro borrando el contenido anterior. En mi caso, como estoy utilizando una máquina virtual, selecciono esta opción de borrar todo el disco duro y utilizar el ordenador solo con el nuevo sistema operativo.</p>
 <p><img alt="" src="img/instalar004.png" /></p>
-<p>Aquí hemos pulsado en el botón <code class="codehilite">[-]</code> para eliminar la partición seleccionada, con lo cual queda marcado como espacio libre y pulsando el botón <code class="codehilite">[+]</code> podemos crear nuevas particiones en ese espacio. No debemos preocuparnos por el borrado de particiones por ahora. Los cambios solo se materializarán cuando se inicie el proceso de instalación. Por ahora solo estamos configurando dicho proceso.</p>
+<p>También podemos pulsar en el botón <code class="codehilite">más opciones</code> para configurar las particiones a nuestro gusto, con la posibilidad de mantener el viejo sistema operativo en otra partición, o crear una aparte para documentos. Vamos a examinemos esto:</p>
+<ul>
+<li>
+<p>Si queremos configurar nuestras particiones, se mostrará una ventana con la lista de unidades de almacenamiento:</p>
 <p><img alt="" src="img/instalar005.png" /></p>
-<p>Esto es lo que se pregunta al intentar crear una nueva partición de disco: tamaño a ocupar (en megas) o si se trata de una partición primaria o extendida.</p>
+<p>Recordemos que en linux los dispositivos son accesibles a bajo nivel mediante archivos en el directorio <code class="codehilite">/dev</code>. En este caso, los discos se denominan <code class="codehilite">sda</code>, <code class="codehilite">sdb</code>, <code class="codehilite">sdc</code> y así sucesivamente.</p>
+</li>
+<li>
+<p>Lo que tenemos por ahora es un disco vacío. Vamos a crear particiones. Seleccionamos el disco y pulsamos en el botón <code class="codehilite">[nueva tabla de particiones]</code>.</p>
+<p>La creación de una nueva tabla de particiones en un disco supone suprimir todo su contenido. Se nos pide confirmación.</p>
 <p><img alt="" src="img/instalar006.png" /></p>
-<p>El desplegable &ldquo;<em>utilizar como</em>&rdquo; permite indicar el tipo de formateo de la partición. Los formatos ext2, ext3 y ext4 son típicos de linux, mientras que FAT16 y FAT32 son los de windows.</p>
+</li>
+<li>
+<p>Seleccionando la tabla de particiones creada, pulsamos en el botón <code class="codehilite">[+]</code> para crear una partición.</p>
 <p><img alt="" src="img/instalar007.png" /></p>
-<p>Para acceder a los contenidos de la nueva partición tenemos que asignarle un punto de montaje en la estructura de directorios. Típicamente crearemos una partición ligada al directorio raiz, y otra para archivos de usuario montada en <code class="codehilite">/home</code>.</p>
+<p>Introducimos las características de la partición a crear: tipo de formato, tipo de partición, tamaño y punto de montaje, es decir, directorio al que va ligada la partición. Típicamente crearemos una partición ligada al directorio raiz <code class="codehilite">/</code>, y otra para archivos de usuario montada en el directorio <code class="codehilite">/home</code>.</p>
+<p>El desplegable &ldquo;<em>utilizar como</em>&rdquo; permite indicar el tipo de formateo de la partición. Los formatos ext2, ext3 y ext4 son típicos de linux, mientras que FAT16 y FAT32 son los de windows.</p>
 <p><img alt="" src="img/instalar008.png" /></p>
-<p>Una vez configurados los cambios en el disco duro, hay que confirmarlos para que se lleven a cabo. Se perderán los archivos de aquellas particiones que hayamos decidido eliminar o reformatear.</p>
+</li>
+<li>
+<p>Seleccionando particiones, podemos suprimirlas pulsando en el botón <code class="codehilite">[-]</code> o cambiar sus características pulsando en el botón <code class="codehilite">[cambiar]</code>. Seleccionando la entrada &ldquo;espacio libre&rdquo; podemos crear nuevas particiones.</p>
+<p><img alt="" src="img/instalar009.png" /></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>No debemos preocuparnos por el borrado de particiones por ahora. Los cambios solo se materializarán cuando se inicie el proceso de instalación. Por ahora solo estamos configurando dicho proceso.</p>
+</div>
+<ul>
+<li>
+<p>Si optamos por modificar una partición, podemos cambiar el formato y el punto de montaje en la estructura de directorios:</p>
 <p><img alt="" src="img/instalar010.png" /></p>
+</li>
+<li>
+<p>Finalmente pulsamos en el botón <code class="codehilite">[Instalar]</code> para que se creen las particiones.</p>
+</li>
+</ul>
+<p>Antes de configurar las particiones, se nos pide confirmación:</p>
+<p><img alt="" src="img/instalar011.png" /></p>
 <h2 id="el-proceso-de-instalacion">El proceso de instalación</h2>
 <p>Comienza el proceso. Lo primero es establecer nuestro huso horario:</p>
-<p><img alt="" src="img/instalar011.png" /></p>
-<p>Seleccionar la disposición del teclado. Podemos comprobar que nuestra elección es la adecuada tecleando algo en el apartado habilitado para hacer pruebas. Intentar introducir caracteres raros: ñ, ç, }, @ &hellip;</p>
 <p><img alt="" src="img/instalar012.png" /></p>
-<p>Introducimos un nombre de usuario, equipo y password. La opción <code class="codehilite">Iniciar sesión automáticamente</code> hace que no se nos pida la contraseña cada vez que encendemos el ordenador. Muchos usuarios prefieren desactivar esta opción por precaución.</p>
+<p>A continuación introducimos un nombre de usuario, equipo y password. La opción <code class="codehilite">Iniciar sesión automáticamente</code> hace que no se nos pida la contraseña cada vez que encendemos el ordenador. Muchos usuarios prefieren desactivar esta opción por precaución.</p>
 <p><img alt="" src="img/instalar013.png" /></p>
-<p>Comienza el proceso de copiado de contenidos del DVD al disco duro, instalación y configuración. Es un proceso totalmente automático que puede llevar bastante tiempo. Mientras dura, se muestra información sobre Mint.</p>
+<p>Comienza el proceso de copiado de contenidos del DVD al disco duro, instalación y configuración. Es un proceso totalmente automático que puede llevar bastante tiempo. Mientras tanto, se muestra información sobre Mint.</p>
 <p><img alt="" src="img/instalar014.png" /></p>
 <p>Fin de la instalación. Extraemos el DVD y pulsamos sobre el botón <code class="codehilite">reiniciar</code>.</p>
 <p><img alt="" src="img/instalar015.png" /></p>
@@ -706,7 +731,7 @@
             &copy; El taller de jf. Creado con
             <a href="https://www.mkdocs.org">MkDocs</a>
             y <a href="https://squidfunk.github.io/mkdocs-material/">
-            Material for MkDocs</a>. Última actualización: 18-11-2018
+            Material for MkDocs</a>. Última actualización: 03-12-2018
         </div>
       </div>
       

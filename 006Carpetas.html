@@ -676,13 +676,11 @@
 <p><code class="codehilite">/nombrecarpeta/archivo.doc</code></p>
 <p>Nótese que no se menciona la unidad de disco en absoluto. El directorio raiz se representa mediante <code class="codehilite">/</code>, y se asocia al disco principal del sistema. Los directorios y subdirectorios que &ldquo;cuelgan&rdquo; de la carpeta raiz estarán ubicados en el mismo disco, a excepción de aquellas carpetas que asociemos explícitamente a otra unidad.</p>
 <p>Si por ejemplo asociamos la carpeta <code class="codehilite">/media/dvd</code> a la unidad lectora de dvd&rsquo;s, el directorio raiz del dvd se corresponderá con esa carpeta. Si en el disco hay una carpeta <code class="codehilite">misarchivos</code>, que contiene un fichero llamado <code class="codehilite">texto.doc</code>, este será accesible mediante <code class="codehilite">/media/dvd/misarchivos/texto.doc</code>.</p>
-<div class="nota">
-
-<strong>Nota:</strong> nótese que en UNIX las carpetas se delimitan con un carácter /. El uso de la barra invertida \ es propio de windows y viene de ciertos problemas que tuvieron con el diseño de las primeras versiones del antiguo MS-DOS.
-
+<div class="admonition note">
+<p class="admonition-title">Nota:</p>
+<p>Nótese que en UNIX las carpetas se delimitan con un carácter <code class="codehilite">/</code>. El uso de la barra invertida <code class="codehilite">\</code> es propio de windows y viene de ciertos problemas que tuvieron con el diseño de las primeras versiones del antiguo MS-DOS.</p>
 </div>
-
-<p>Veamos a continuación las principales carpetas de un típico sistema tipo UNIX. La estructura completa se conoce como <code class="codehilite">filesystem</code> </p>
+<p>Veamos a continuación las principales carpetas de un típico sistema tipo UNIX. La estructura completa se conoce como <code class="codehilite">filesystem</code>. </p>
 <h2 id="directorio">Directorio /</h2>
 <p>Toda la estructura de carpetas &ldquo;cuelga&rdquo; del directorio raíz, también llamado  <em>root</em>, representado por una barra inclinada /. Todos los contenidos de las diferentes unidades de almacenamiento cuelgan de aquí.</p>
 <h2 id="directorio-boot">Directorio /boot</h2>
@@ -723,7 +721,7 @@
 <h2 id="directorio-etc">Directorio /etc</h2>
 <p>Aquí es donde se guardan los archivos de configuración del sistema operativo y de los programas y aplicaciones instaladas.</p>
 <h2 id="directorio-dev">Directorio /dev</h2>
-<p>Incluye los <em>drivers</em>, es decir, los programas que utiliza el sistema para interaccionar con los dispositivos conectados: disco duro, teclado, unidad USB, etc.</p>
+<p>Los archivos de esta carpeta son en realidad accesos de bajo nivel a los dispositivos conectados: disco duro, teclado, unidad USB, etc.</p>
 <h2 id="directorio-proc">Directorio /proc</h2>
 <p>Contiene información de los procesos y aplicaciones que se están ejecutando en el momento. Realmente no guarda información fisicamente, sino que es una forma de referirnos a los datos de esos procesos.</p>
 <h2 id="directorio-sys">Directorio /sys</h2>
@@ -842,7 +840,7 @@
             &copy; El taller de jf. Creado con
             <a href="https://www.mkdocs.org">MkDocs</a>
             y <a href="https://squidfunk.github.io/mkdocs-material/">
-            Material for MkDocs</a>. Última actualización: 18-11-2018
+            Material for MkDocs</a>. Última actualización: 03-12-2018
         </div>
       </div>
       
